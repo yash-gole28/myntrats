@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { Card, CardContent, CardMedia, Checkbox, Container, FormControlLabel, Stack, Typography } from '@mui/material'
+import { Card, CardContent, CardMedia, Stack, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import { Grid, Paper } from '@mui/material';
 import axios from 'axios';
 
 const Content = () => {
-    // const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
     const [productData , setProductData] = useState<any[]>([])
     const Item = styled(Paper)(({ theme }) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -23,11 +23,9 @@ const Content = () => {
         [theme.breakpoints.down('md')]: {
             display: 'none'
         },
-        // backgroundColor: 'lightblue'
         border: '1px solid rgb(197, 195, 195)'
     }))
     const MyBox2 = styled(Box)(({ theme }) => ({
-        // backgroundColor: 'lightpink',
         borderTop: '1px solid rgb(197, 195, 195)',
         borderBottom: '1px solid rgb(197, 195, 195)',
         padding: '1rem',
@@ -38,12 +36,10 @@ const Content = () => {
     const Typo = styled(Typography)(({ theme }) => ({
         [theme.breakpoints.down('md')]: {
             backgroundColor: '',
-            // margin:'.25rem'
         },
         [theme.breakpoints.up('md')]: {
             fontWeight: '600',
             Padding: '8px'
-            // margin:'.75rem'
         }
     }))
     const MyCard = styled(Card)((theme) => ({
@@ -51,7 +47,6 @@ const Content = () => {
     }))
     const MyStack = styled(Stack)(({ theme }) => ({
         [theme.breakpoints.down('md')]: {
-            // display:'none'
             paddingTop: '80px'
         }
     }))
@@ -123,9 +118,7 @@ const Content = () => {
                         <label className="lbl" htmlFor="myCheckbox">VIMAL JONNY</label>
                     </Box>
                 </Box>
-                {/* <FormControlLabel control={<Checkbox size='small' sx={{ color: 'rgb(226, 224, 224)' }} />} /><Label>abcd</Label> */}
-
-                {/* <FormControlLabel control={<Checkbox size='small' sx={{ color: 'rgb(226, 224, 224)' }} />} label='lsdkf' /> */}
+               
 
                 <Box sx={{ display: 'flex', alignItems: 'start', flexDirection: 'column', borderBottom: '1px solid grey' }} p={4}>
                     <Typography variant='h6' sx={{ color: 'black', fontSize: '14px', mb: '15px' }}>PRICE</Typography>
