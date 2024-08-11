@@ -46,6 +46,7 @@ const Content = () => {
         borderRadius: '0px',
     }))
     const MyStack = styled(Stack)(({ theme }) => ({
+        width:'100%',
         [theme.breakpoints.down('md')]: {
             paddingTop: '80px'
         }

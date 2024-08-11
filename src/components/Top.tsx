@@ -9,7 +9,7 @@ import NativeSelect from '@mui/material/NativeSelect';
 import { Box } from '@mui/material';
 const Top = () => {
     return (
-        <Box p={3} sx={{ marginTop: '80px', marginBottom: '-15px', display: { xs: 'none', md: 'flex' } }}>
+        <Box p={3} sx={{ marginTop: '80px', marginBottom: '-15px', display: { xs: 'none', md: 'flex' }, width: '100%' }}>
             <Box className='breadcrumbs'>
                 <Box role="presentation">
                     <Breadcrumbs style={{ fontSize: "14px" }} aria-label="breadcrumb">
@@ -28,21 +28,21 @@ const Top = () => {
                     </Breadcrumbs>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'end', marginTop: '14px' }}>
- 
+
                     <Typography variant='h6' sx={{ fontSize: '14px', fontWeight: 'bold' }}>Men T-Shirts</Typography>
                     <Typography sx={{ fontSize: '14px', color: 'grey' }}>- 141155 items</Typography>
                 </Box>
- 
- 
+
+
                 <Box sx={{
-                    display: 'flex', justifyContent: 'space-between', width: '96vw', alignItems: 'center',height:'50px',marginTop:'15px'
+                    display: 'flex', width: '96vw', alignItems: 'center', height: '50px', marginTop: '15px'
                 }}>
                     <Typography flex={1.5} variant='h6' sx={{ fontSize: '14px' }}>
                         <b>FILTERS</b>
                     </Typography>
-                    <Box flex={4} sx={{marginTop:'3px'}} className="drop2">
- 
- 
+                    <Box flex={4} sx={{ marginTop: '3px' }} className="drop2">
+
+
                         <NativeSelect
                             sx={{ borderRadius: '10px', fontWeight: '400', color: 'grey', fontSize: '14px', overflow: 'hidden' }}
                             disableUnderline
@@ -56,9 +56,9 @@ const Top = () => {
                             <option value={20}>Twenty</option>
                             <option value={30}>Thirty</option>
                         </NativeSelect>
- 
+
                         <NativeSelect
-                            sx={{ borderRadius: '10px',  fontWeight: '400', color: 'grey', fontSize: '14px', overflow: 'hidden' }}
+                            sx={{ borderRadius: '10px', fontWeight: '400', color: 'grey', fontSize: '14px', overflow: 'hidden' }}
                             disableUnderline
                             defaultValue={10}
                             inputProps={{
@@ -70,9 +70,9 @@ const Top = () => {
                             <option value={20}>Twenty</option>
                             <option value={30}>Thirty</option>
                         </NativeSelect>
- 
+
                         <NativeSelect
-                            sx={{ borderRadius: '8px',  fontWeight: '400', color: 'grey', fontSize: '14px', overflow: 'hidden', width: 'fint' }}
+                            sx={{ borderRadius: '8px', fontWeight: '400', color: 'grey', fontSize: '14px', overflow: 'hidden', width: 'fint' }}
                             disableUnderline
                             defaultValue={10}
                             inputProps={{
@@ -84,18 +84,18 @@ const Top = () => {
                             <option value={20}>3xl</option>
                             <option value={30}>2xl</option>
                         </NativeSelect>
- 
+
                     </Box>
                     <Box flex={1.8} className="drop3">
-                        <FormControl sx={{ minWidth: 280, paddingRight: '20px', marginLeft:'20%' }} size='small'>
- 
+                        <FormControl sx={{ minWidth: 240, paddingRight: '20px', marginLeft: '20%' }} size='small'>
+
                             <Select
                                 sx={{ fontSize: '12px' }}
                                 displayEmpty
                                 defaultValue={10}
                                 inputProps={{ 'aria-label': 'Without label' }}
                             >
- 
+
                                 <MenuItem value={10}><Typography sx={{ display: 'flex', alignItems: 'center' }}>
                                     <Typography sx={{ fontSize: '12px' }} component='p'>Sort by:</Typography>
                                     <Typography sx={{ fontSize: '14px' }} variant='h6'>Recommended</Typography>
@@ -110,5 +110,5 @@ const Top = () => {
         </Box>
     )
 }
- 
+
 export default Top

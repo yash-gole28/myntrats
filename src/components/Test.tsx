@@ -1,11 +1,11 @@
 import { Box } from '@mui/material'
 import React from 'react'
-import Nav from '../components/Nav'
-import Top from '../components/Top'
-import Body from '../components/Body'
+import Nav from './Nav'
+import Top from './Top'
+import Body from './Body'
+import Content from './Content'
 
-
-const Home = () => {
+const Test = () => {
   return (
     <Box sx={{width:'100%',overflow:'hidden'}}>
       <Nav/>
@@ -16,4 +16,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Test
