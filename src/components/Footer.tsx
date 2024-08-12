@@ -112,8 +112,8 @@ const Footer = () => {
                         EXPERIENCE MYNTRA APP ON MOBILE
                     </Typography>
                     <Box sx={{display:'flex'}}>
-                        <img className='image' src='dd.png' alt='' />
-                        <img className='image' src='dd.png' alt='' />
+                        <img className='image' src='assets/img1.png' alt='' />
+                        <img className='image' src='assets/img2.png' alt='' />
                     </Box>
                     <Typography variant='h6' component='h6' sx={{ fontSize: '12px', marginBottom: '1rem', marginTop: '2rem' }}>
                         KEEP IN TOUCH
@@ -129,13 +129,13 @@ const Footer = () => {
                     margin: '1rem'
                 }}>
                     <Box sx={{ display: 'flex', color: 'grey', marginBottom: '20px' }}>
-                        <img className='image1' src='original.png' alt='' />
+                        <img className='image1' src='assets/Capture1.png' alt='' />
                         <Typography sx={{ fontSize: '15px' }}>
                             <b className='bold'> 100% original</b> guarantee for all products at myntra.com
                         </Typography>
                     </Box>
                     <Box sx={{ display: 'flex', color: 'grey' }}>
-                        <img className='image1' src='og.png' alt='' />
+                        <img className='image1' src='assets/Capture2.png' alt='' />
                         <Typography sx={{ fontSize: '15px' }}>
                             <b className='bold'> Return within 10 days</b> of receiving ur order
                         </Typography>

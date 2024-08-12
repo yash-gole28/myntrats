@@ -8,6 +8,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
+import logo from './../assets/logo.png'
 
 const Nav = () => {
 
@@ -26,10 +27,10 @@ const Nav = () => {
             backgroundColor: 'rgb(245,245,246)',
         },
         marginLeft: 0,
-        width: '90%',
+        width: '80%',
         [theme.breakpoints.up('sm')]: {
             marginLeft: theme.spacing(1),
-            width: '90%',
+            width: '80%',
         },
         [theme.breakpoints.down('sm')]: {
            display:'none'
@@ -65,7 +66,7 @@ const Nav = () => {
     return (
         <Box sx={{width:'100vw',position:'fixed',top:'0px',backgroundColor:'white',zIndex:123}}>
             <Toolbar sx={{boxShadow:'0px 0px 4px rgb(171, 165, 165)'}}>
-                <Grid container sx={{ display: 'flex', justifyContent: 'space-between' ,marginTop:'.5rem',marginBottom:'.5rem',width:'100%'}}>
+                <Grid container sx={{ display: 'flex', justifyContent: 'space-between' ,marginTop:'.8rem',marginBottom:'.5rem',width:'100%'}}>
                     <Grid item md={6} xs={5} lg={6} sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
 
                         <InsteadLogo>
@@ -82,9 +83,9 @@ const Nav = () => {
                         </InsteadLogo>
 
 
-                        <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+                        <Box sx={{ display: { xs: 'none', md: 'flex',lg:'flex' } }}>
 
-                            <img className='myntra-logo' src="assets/logo.png" alt="" />
+                            <img className='myntra-logo' src={logo} alt="myntra Logo" />
                         </Box>
 
                         <Typography

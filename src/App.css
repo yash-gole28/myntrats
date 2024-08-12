@@ -60,8 +60,9 @@
 }
  
 .image{
-  width: 250px;
+  width: 140px;
   height: 50px;
+  overflow:hidden;
 }
  
 .image2{
@@ -88,8 +89,13 @@
   z-index: 144;
 }
 
+.gap{
+  margin-left: 1rem;
+  font-size: 13px;
+}
 .lsd{
   color:rgb(217, 213, 213);
+  border: '1px solid rgb(224, 219, 219)'
 }
 
 
