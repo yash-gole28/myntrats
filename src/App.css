@@ -85,7 +85,7 @@
   color:rgb(243, 76, 76);
   position: relative;
   font-size: 8px;
-  bottom: 4px; 
+  top: 2px; 
   z-index: 144;
 }
 
@@ -94,7 +94,7 @@
   font-size: 13px;
 }
 .lsd{
-  color:rgb(217, 213, 213);
+  color:rgb(248, 238, 238);
   border: '1px solid rgb(224, 219, 219)'
 }
 

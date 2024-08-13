@@ -4,6 +4,10 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import i from './../assets/img1.png'
+import j from './../assets/img2.png'
+import k from './../assets/Capture1.png'
+import l from './../assets/Capture2.png'
 
 const Footer = () => {
     return (
@@ -112,8 +116,8 @@ const Footer = () => {
                         EXPERIENCE MYNTRA APP ON MOBILE
                     </Typography>
                     <Box sx={{display:'flex'}}>
-                        <img className='image' src='assets/img1.png' alt='' />
-                        <img className='image' src='assets/img2.png' alt='' />
+                        <img className='image' src={i} alt='sdklf' />
+                        <img className='image' src={j} alt='' />
                     </Box>
                     <Typography variant='h6' component='h6' sx={{ fontSize: '12px', marginBottom: '1rem', marginTop: '2rem' }}>
                         KEEP IN TOUCH
@@ -129,13 +133,13 @@ const Footer = () => {
                     margin: '1rem'
                 }}>
                     <Box sx={{ display: 'flex', color: 'grey', marginBottom: '20px' }}>
-                        <img className='image1' src='assets/Capture1.png' alt='' />
+                        <img className='image1' src={k} alt='' />
                         <Typography sx={{ fontSize: '15px' }}>
                             <b className='bold'> 100% original</b> guarantee for all products at myntra.com
                         </Typography>
                     </Box>
                     <Box sx={{ display: 'flex', color: 'grey' }}>
-                        <img className='image1' src='assets/Capture2.png' alt='' />
+                        <img className='image1' src={l} alt='' />
                         <Typography sx={{ fontSize: '15px' }}>
                             <b className='bold'> Return within 10 days</b> of receiving ur order
                         </Typography>

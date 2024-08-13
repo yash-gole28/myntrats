@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const BASE_URL = process.env.VITE_BASE_URL;
+const BASE_URL = process.env.REACT_APP_BASE;
 
 // const getToken = async () => {
 //   const userInfo = await getFromLocalStorage("token");
@@ -34,8 +34,8 @@ const get = async (
       headers: { ...headers, Authorization:'' },
       cancelToken: cancelToken,
     };
-
-    const response = await axios.get(BASE_URL + url, config);
+    console.log(BASE_URL + url)
+    const response = await axios.get(BASE_URL + url,config);
 
     return response;
   } catch (error: any) {
