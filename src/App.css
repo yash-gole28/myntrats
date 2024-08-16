@@ -98,10 +98,13 @@
   border: '1px solid rgb(224, 219, 219)'
 }
 
-
-
-
-
+.css-306mec{
+  width:unset !important
+}
+.list{
+  padding-left: 1rem;
+  
+}
 
 
 

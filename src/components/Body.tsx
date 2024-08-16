@@ -15,6 +15,7 @@ const Body = () => {
     const route = useNavigate()
     const BodyContainer = styled(Box)(({ theme }) => ({
         width: '100%',
+        // border:'2px solid red',
         overflow: 'hidden',
         [theme.breakpoints.down('sm')]: {
             marginTop: '80px'
@@ -83,6 +84,19 @@ const Body = () => {
                         </Box>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'column', padding: '1rem', borderBottom: '1px solid rgb(224, 219, 219)' }}>
+                        <Typography variant='h6' sx={{ marginBottom: '1rem', fontSize: '13px', fontWeight: 'bold' }}>CATEGORIES</Typography>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
+                            {categoriesData.map((data) => (
+                                <Box sx={{ display: 'flex', justifyContent: 'start', marginBottom: '5px' }}>
+                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                    <label className='gap'> {data} </label>
+                                    <Typography sx={{ fontSize: "10px", color: 'grey', marginLeft: '3px' }}>(14430)</Typography>
+                                </Box>
+                            ))}
+
+                        </Box>
+                    </Box>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', padding: '1rem', borderBottom: '1px solid rgb(224, 219, 219)' }}>
                         <Typography variant='h6' sx={{ marginBottom: '1rem', fontSize: '13px', fontWeight: 'bold' }}>BRAND</Typography>
                         <Box sx={{ display: 'flex', alignItems: 'center' }}>
                             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
@@ -97,7 +111,7 @@ const Body = () => {
 
                     </Box>
                 </Box>
-                <Box sx={{ border: '1px solid rgb(224, 219, 219)', width: { md: '80%', xs: '100%' }, overflow: 'hidden' }}>
+                <Box sx={{ border: '1px solid rgb(224, 219, 219)', width: { md: '80%', xs: '100%' }, overflow: 'hidden'}}>
                     <Grid container sx={{ display: 'flex', flexWrap: 'wrap', width: { xs: '100%', md: '100%' }, overflow: 'hidden' }}>
                         {productData?.length !== 0 ? productData.map((data) => (
 
@@ -130,7 +144,7 @@ const Body = () => {
                                             title={data.title}
                                             component="img"
                                         />
-                                        <Box sx={{ position: 'absolute', bottom: '5px', left: '5px', opacity: 0.7, zIndex: 1000, backgroundColor: 'white' }}>
+                                        <Box sx={{ position: 'absolute', bottom: '5px', left: '5px', opacity: 0.7, zIndex: 10, backgroundColor: 'white' }}>
                                             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 'fit-content' }}>
                                                 <Typography sx={{ fontWeight: 'bold', fontSize: '13px', marginLeft: '6px', marginRight: '6px' }}>
                                                     {data.rating} <StarIcon sx={{ color: 'rgb(20, 149, 143)', fontSize: '13px', marginBottom: '3px' }} />

@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <Box sx={{width:'100%',overflow:'hidden'}}>
+    <Box sx={{overflow:'hidden'}}>
       <Top/>
       <Body/>
       <Footer/>

@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import React from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -8,13 +8,14 @@ import i from './../assets/img1.png'
 import j from './../assets/img2.png'
 import k from './../assets/Capture1.png'
 import l from './../assets/Capture2.png'
+import Grid from '@mui/material/Unstable_Grid2';
 
 const Footer = () => {
     return (
-        <Box>
-            <Grid container>
-                <Grid md={2} sx={{
-                    margin: '1rem', ml: '5rem'
+        <Box sx={{width:'100%'}}>
+            <Grid container sx={{display:'flex',flexWrap:'wrap',width:'100%'}}>
+                <Grid md={2} xs={5} sm={5} sx={{
+                    margin: '1rem', ml:{xs:'1rem', sm:'1rem',md:'5rem'}
                 }}>
                     <Typography variant='h6' component='h6' sx={{ fontSize: '12px', marginBottom: '2rem' }}>
                         ONLINE SHOPPING
@@ -70,8 +71,8 @@ const Footer = () => {
 
 
                 </Grid>
-                <Grid md={2} sx={{
-                    margin: '1rem 0rem'
+                <Grid md={2} xs={5} sm={5} sx={{
+                    margin: '1rem'
                 }}>
 
                     <Typography variant='h6' component='h6' sx={{ fontSize: '12px', marginBottom: '2rem' }}>
@@ -109,7 +110,7 @@ const Footer = () => {
                     </Typography>
 
                 </Grid>
-                <Grid md={3} sx={{
+                <Grid  md={3} xs={12} sm={12} sx={{
                     margin: '1rem'
                 }}>
                     <Typography variant='h6' component='h6' sx={{ fontSize: '12px', marginBottom: '2rem' }}>
@@ -129,7 +130,7 @@ const Footer = () => {
                         <InstagramIcon sx={{ marginRight: '0.5rem' }} />
                     </Box>
                 </Grid>
-                <Grid md={3} sx={{
+                <Grid  md={3} xs={12} sm={12} sx={{
                     margin: '1rem'
                 }}>
                     <Box sx={{ display: 'flex', color: 'grey', marginBottom: '20px' }}>
